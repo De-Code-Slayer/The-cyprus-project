@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %} 
+
+<article class="blog">
+    <div class="blog-content">
+        <div class="col-md-12">
+
+            <h1> {{post_title.0.0}} </h1>
+
+            <p> {{content.0.0}} </p>
+            <div class="blog-info">
+                <span class="badge badge-secondary"> Date: {{post_date.0.0}}  </span>
+                <span class="badge badge-info">Author: {{ post_author.0.0 }}</span>
+                <span class="badge badge-primary">Share</span>
+
+            </div>
+        </div>
+
+    </div>
+</article>
+
+ {% endblock %}
+
+{% block more %}
+<!-- Start of blogs mini displays -->
+<section class="more-blog-post">
+    <h3>More of the latest Stories</h3>
+    <div class="content-background">
+        <div class="mini-blog">
+
+
+            <div class="card">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">{{post_title.1.0}}</h5>
+                    <div class="card-text-place">
+                    <p class="card-text">{{content.1.0}}</p>
+                    </div>
+                    <a href={{url_for("views.more", id=post_id.1.0)}} class="btn btn-primary">Read</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">{{post_title.2.0}}</h5>
+                    <div class="card-text-place">
+                    <p class="card-text">{{content.2.0}}</p>
+                    </div>
+                    <a href={{url_for("views.more", id=post_id.2.0)}} class="btn btn-primary">Read</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">{{post_title.3.0}}</h5>
+                    <div class="card-text-place">
+                    <p class="card-text">{{content.3.0}}</p>
+                    </div>
+                    <a href={{url_for("views.more", id=post_id.3.0)}} class="btn btn-primary">Read</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>
+{% endblock %}
+<!-- End of blogs mini displays -->

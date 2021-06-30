@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <article class="blog">
+        <div class="blog-content">
+            <div class="col-md-12">
+    
+                <h1> {{content.articletitle}} </h1>
+    
+                <p> {{content.articles}} </p>
+                <div class="blog-info">
+                    <span class="badge badge-secondary"> Date: {{content.date}} </span>
+                    <span class="badge badge-info">Author: {{ content.author }}</span>
+                    <span class="badge badge-primary">Share</span>
+    
+                </div>
+            </div>
+    
+        </div>
+    </article>
+
+
+{% endblock %}
