@@ -20,3 +20,11 @@ class User(db.Model, UserMixin):
     user_name = db.Column(db.String(150))
     password = db.Column(db.String(150))
     
+#-------------------------------  end of database for blog -------------------------------------
+
+
+class Whatsapp(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String())
+    link = db.Column(db.String())
+    institute = db.Column(db.String(100))

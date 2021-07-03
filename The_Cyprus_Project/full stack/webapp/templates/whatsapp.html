@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<div class="wa-search-bg">
+    <div class="wa-search">
+    <form method="post">
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Filter By</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="category">
+                <option>Easter mediterian</option>
+                <option>Near East</option>
+                <option>Cyprus International University</option>
+                <option>Market Place</option>
+                <option>Adverts</option>
+                <option>Party</option>
+                <option>Church</option>
+                <option>Get Together</option>
+                <option>Study</option>
+            </select>
+            <input type="submit" class="btn btn-secondary" value="Search">
+        </div>
+     
+    </form>
+    </div>
+</div>
+
+<div class="whatsapp">
+    {% if whatsapp %}
+    {% for x in whatsapp %}
+    <div class="wa-bg">
+        <div class="wa"> 
+           <div class="wa-head"><h3>{{x.name}}</h3></div> 
+           <a href="" target="_blank" rel="noopener noreferrer">lINK TO A WHATS APP GROUP HERE</a>
+        </div>
+    </div>
+    {% endfor%}
+    {% endif %}
+    {% if not whatsapp %}
+</div>
+
+{% endblock %}

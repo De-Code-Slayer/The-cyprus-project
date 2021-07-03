@@ -45,17 +45,21 @@
         {% endif %}
         {% endwith %}
     </header>
-    <h1>Create a Post!</h1>
+    <h1>Create a Blog Post!</h1>
     <div class="form">
         <form method="POST">
+            <div class="form-group">
+                <label for="exampleFormControlInput0">section</label>
+                <input type="text" class="form-control" id="exampleFormControlInput0" value="Blog" name="section" readonly>
+            </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Title</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Post Title" name="articletitle" required>
             </div>
-<div class="form-group">
-    <label for="exampleFormControlInput2">Author</label>
-    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Author" name="author" required>
-</div>
+               <div class="form-group">
+               <label for="exampleFormControlInput2">Author</label>
+               <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Author" name="author" required>
+            </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Enter Post</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="13" name="articles" required></textarea>
@@ -65,7 +69,43 @@
             </div>
         </form>
     </div>
-
+<!-- creating a whatsapp Link -->
+<h1>Create Whatsapp links!</h1>
+<div class="form">
+    <form method="POST">
+        <div class="form-group">
+            <label for="exampleFormControlInput0">section</label>
+            <input type="text" class="form-control" id="exampleFormControlInput0" value="Whatsapp" name="section" readonly>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Whatsapp Title"
+                name="whatsapp_title" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Link</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Link" name="Whatsapp_link"
+                required>
+        </div>
+        <!-- change category to options instead of input -->
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Category/Institute</label>
+            <select class="form-control" id="exampleFormControlTextarea1" name="Institute">
+                <option>Easter mediterian</option>
+                <option>Near East</option>
+                <option>Cyprus International University</option>
+                <option>Market Place</option>
+                <option>Adverts</option>
+                <option>Party</option>
+                <option>Church</option>
+                <option>Get Together</option>
+                <option>Study</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Post">
+        </div>
+    </form>
 
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
