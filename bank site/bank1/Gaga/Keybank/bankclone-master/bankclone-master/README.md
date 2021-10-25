@@ -1,1 +1,0 @@
-This is a clone website of the KeyBank website. It is in no way connected to KeyBank and all images used are copyright of KeyBank. This serves as an example of how a website like KeyBank could be cloned and used in a phishing campaign against current customers to gain access to their data.
